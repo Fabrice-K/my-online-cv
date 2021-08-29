@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+
+  section {
+    font-size: 2rem;
+    font-weight: bold;
+
+    .developer {
+      background-color: lightcoral;
+    }
+
+    .designer {
+      background-color: greenyellow;
+    }
+
+    .programmer {
+      background-color: lightseagreen;
+    }
+
+    .freelance {
+      background-color: lightskyblue;
+    }
+  }
+}

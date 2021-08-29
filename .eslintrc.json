@@ -3,9 +3,10 @@
     "es6": true,
     "browser": true,
     "mocha": true,
-    "jasmine": true
+    "jasmine": true,
+    "node": true 
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "next"],
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module",

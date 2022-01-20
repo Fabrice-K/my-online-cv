@@ -6,15 +6,18 @@ import styles from './Hero.module.scss';
 
 function Hero() {
   return (
-    <div className={styles.container}>
-      <section>
-        <div className={styles.developer}>Developer.</div>
-        <div className={styles.designer}>Designer.</div>
-        <div className={styles.programmer}>Programmer.</div>
-        <div className={styles.freelance}>Freelance.</div>
-      </section>
-      <FontAwesomeIcon icon={faArrowDown} />
-    </div>
+    <section className={styles.container}>
+      <div className={styles.left}>
+        <h1 className={styles.developer}>Developpeur.</h1>
+        <h1 className={styles.designer}>Designer.</h1>
+        <h1 className={styles.entrepreneur}>Entrepreneur.</h1>
+        <h1 className={styles.freelance}>Freelance.</h1>
+      </div>
+      <div className={styles.right}>
+        J'accompagne les entreprises dans la transformation numérique de leur système d'information
+      </div>
+      {/* <FontAwesomeIcon icon={faArrowDown} /> */}
+    </section>
   );
 };
 

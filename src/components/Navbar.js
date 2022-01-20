@@ -1,19 +1,21 @@
 import ActiveLink from './common/ActiveLink';
 
+import styles from './Navbar.module.scss';
+
 const Navbar = (props) => {
   return (
-    <nav>
+    <nav className={styles.container}>
       <ActiveLink href="/" ariaLabel="home">
-        <span className="me-3">home</span>
+        <span>home</span>
       </ActiveLink>
       <ActiveLink href="/about" ariaLabel="about">
-        <span className="me-3">about</span>
+        <span>about</span>
       </ActiveLink>
       <ActiveLink href="/skills" ariaLabel="skills">
-        <span className="me-3">skills</span>
+        <span>skills</span>
       </ActiveLink>
       <ActiveLink href="/projects" ariaLabel="projects">
-        <span className="me-3">projects</span>
+        <span>projects</span>
       </ActiveLink>
     </nav>
   );

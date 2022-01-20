@@ -7,8 +7,7 @@ import styles from './Header.module.scss';
 const Header = (props) => {
   return (
     <header className={styles.container}>
-      This is the header
-      <Image src="/logo512.png" width={50} height={50} />
+      <Image src="/logo512.png" width={30} height={30} />
       <Navbar />
     </header>
   );

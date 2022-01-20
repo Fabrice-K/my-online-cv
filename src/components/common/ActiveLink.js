@@ -1,11 +1,9 @@
 import { useRouter } from 'next/router';
 
+import styles from './ActiveLink.module.scss';
+
 function ActiveLink({ children, href, ariaLabel }) {
   const router = useRouter();
-  const style = {
-    marginRight: 10,
-    color: router.asPath === href ? 'red' : 'black',
-  };
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -13,9 +11,15 @@ function ActiveLink({ children, href, ariaLabel }) {
   };
 
   return (
-    <a href={href} onClick={handleClick} aria-label={ariaLabel} style={style}>
-      {children}
-    </a>
+    <div className={styles.container}>
+      <a
+        href={href}
+        onClick={handleClick}
+        aria-label={ariaLabel}
+        className={router.asPath === href ? styles.active : ''}>
+        {children}
+      </a>
+    </div>
   );
 }
 

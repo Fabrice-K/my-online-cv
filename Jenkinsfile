@@ -76,11 +76,5 @@ pipeline {
         //             }
         //         }
         //     }
-        // }
-        post {
-            changed {
-                emailext(attachLog: true, body: 'Test', subject: 'Build OK/KO', to: 'fkakchantichi@gmail.com')
-            }
-        }
-    }
+     }
 }

@@ -15,5 +15,6 @@
   "eslint.options": {},
   "search.exclude": {
     "**/node_modules": true
-  }
+  },
+  "git.mergeEditor": true,
 }

@@ -1,4 +1,4 @@
-import ActiveLink from './common/ActiveLink';
+import ActiveLink from '../common/ActiveLink';
 
 import styles from './Navbar.module.scss';
 

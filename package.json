@@ -17,6 +17,7 @@
   "scripts": {
     "start": "next start",
     "build": "next build",
+    "build:debug": "next build --debug",
     "test": "react-scripts test",
     "dev": "next dev",
     "lint": "next lint"

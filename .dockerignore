@@ -1,1 +1,8 @@
-node_modules
+.git/
+.gitignore
+.next/
+.dockerignore
+docker-compose.yml
+Dockerfile
+nginx/
+node_modules/

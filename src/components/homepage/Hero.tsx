@@ -4,7 +4,7 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 import styles from './Hero.module.scss';
 
-function Hero() {
+function Hero(): JSX.Element {
   return (
     <section className={styles.container}>
       <div className={styles.left}>

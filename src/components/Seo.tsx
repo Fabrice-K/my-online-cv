@@ -1,13 +1,20 @@
 import Head from 'next/head';
 
-const Seo = ({ description, title, siteTitle, config }) => (
+type SeoProps = {
+  description: string;
+  siteTitle: string;
+  siteName: string;
+
+}
+
+const Seo = ({ description, siteTitle, siteName }: SeoProps) => (
   <Head>
-    <title>{`${title} | ${siteTitle}`}</title>
+    <title>{`${siteTitle} | ${siteName}`}</title>
     <meta name="description" content={description} key="description" />
     <meta property="og:type" content="website" key="website" />
-    <meta property="og:title" content={title} key="title" />
+    <meta property="og:title" content={siteTitle} key="title" />
     <meta property="og:description" content={description} key="ogDescription" />
-    <meta property="og:site_name" content={siteTitle} key="siteTitle" />
+    <meta property="og:site_name" content={siteName} key="name" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </Head>
 );

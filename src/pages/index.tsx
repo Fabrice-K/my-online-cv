@@ -4,7 +4,7 @@ import Hero from "../components/homepage/Hero";
 const HomePage = () => (
   <div>
     <Hero />
-    <BusinessSolution />
+    <BusinessSolution title="Ours offers" description="Free work out" />
   </div>
 );
 

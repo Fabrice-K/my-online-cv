@@ -1,9 +1,10 @@
 FROM node:16.14-alpine AS build
-RUN mkdir -p /usr/src
-WORKDIR /usr/src
-COPY package*.json /usr/src/
-RUN npm install
-COPY . /usr/src/
+ENV NODE_ENV=production
+RUN mkdir -p /app
+WORKDIR /app
+COPY package*.json ./
+RUN npm install --production
+COPY . .
 RUN npm run build
 
 FROM nginx:1.23.1-alpine

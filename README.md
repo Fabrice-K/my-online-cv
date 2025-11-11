@@ -1,7 +1,6 @@
 # Online Personal Trainer
 - Provide free workout programs and meal plans
 - Offer paid personalized workout program and coaching
-- Offer paid personalized workout program and coaching
 
 ## Tasks to perform and Objectives
 - Build an Instagram page as well
